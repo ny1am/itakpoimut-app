@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
   },
   logoWrapper: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0, 74, 128, 0.22)',
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     width: 160,
   },
   form: {
-    flex: 1,
+    flex: 3,
     alignItems: 'stretch',
     marginTop: 40,
   },

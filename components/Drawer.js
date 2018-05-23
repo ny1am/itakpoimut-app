@@ -22,8 +22,22 @@ class DrawerSpec extends Component {
         <View style={styles.container}>
           <Drawer>
             {loggedUser && (
-              <Drawer.Header>
+              <Drawer.Header
+                style={{
+                  container: {
+                    backgroundColor: 'white',
+                  },
+                  contentContainer: {
+                    backgroundColor: 'white',
+                  },
+                }}
+              >
                 <Drawer.Header.Account
+                  style={{
+                    container: {
+                      backgroundColor: 'rgba(0, 74, 128, 0.22)',
+                    },
+                  }}
                   avatar={
                     <Avatar
                       image={

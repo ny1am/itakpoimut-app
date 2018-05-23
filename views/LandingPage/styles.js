@@ -1,19 +1,16 @@
 import { StyleSheet } from 'react-native';
 
-const screenWidth = 380;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     paddingBottom: 30,
   },
   banner: {
     position: 'relative',
   },
   img: {
-    width: screenWidth,
+    height: 300,
   },
   centered: {
     position: 'absolute',
@@ -27,7 +24,6 @@ const styles = StyleSheet.create({
   paragraph: {
     color: 'white',
     fontSize: 32,
-    width: screenWidth - 80,
     textAlign: 'center',
     textShadowColor: 'rgba(0, 0, 0, 0.3)',
     textShadowOffset: { width: -1, height: 1 },
