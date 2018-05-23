@@ -7,8 +7,6 @@ import createStore from './store';
 import { StyleSheet, View, StatusBar } from 'react-native';
 import { COLOR, ThemeProvider } from 'react-native-material-ui';
 
-import Layout from './components/Layout';
-
 const store = createStore();
 
 const uiTheme = {
