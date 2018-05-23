@@ -1,18 +1,11 @@
 // Wherever you build your reducers
-import { combineReducers, createStore, applyMiddleware, compose } from 'redux';
-import AppNavigation from '../components/navigation/AppNavigation';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
 
-const navReducer = (state, action) => {
-  const newState = AppNavigation.router.getStateForAction(action, state);
-  return newState || state;
-};
+import rootReducer from '../reducers';
 
 export default () => {
-  /* ------------- Assemble The Reducers ------------- */
-  const rootReducer = combineReducers({
-    nav: navReducer,
-  });
+  const store = createStore(rootReducer, applyMiddleware(thunk));
 
-  // return store
-  return createStore(rootReducer);
+  return store;
 };
