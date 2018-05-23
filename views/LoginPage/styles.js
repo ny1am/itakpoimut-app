@@ -5,11 +5,25 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'stretch',
+  },
+  logoWrapper: {
+    flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 74, 128, 0.22)',
+  },
+  logo: {
+    width: 160,
+  },
+  form: {
+    flex: 1,
+    alignItems: 'stretch',
+    marginTop: 40,
   },
   inputWrapper: {
-    margin: 15,
-    height: 40,
+    margin: 40,
+    marginBottom: 0,
+    marginTop: 0,
   },
   buttonWrapper: {
     marginTop: 40,

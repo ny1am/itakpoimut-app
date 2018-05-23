@@ -56,7 +56,7 @@ const DrawerNavigation = StackNavigator(
   {
     headerMode: 'float',
     navigationOptions: ({ navigation, navigationOptions = {} }) => ({
-      headerStyle: { backgroundColor: '#4C3E54' },
+      headerStyle: { backgroundColor: '#004a80' },
       title: navigationOptions.title || 'Menu',
       headerTintColor: 'white',
       gesturesEnabled: false,

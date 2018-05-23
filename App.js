@@ -5,13 +5,13 @@ import ReduxNavigation from './components/navigation/ReduxNavigation';
 import { Provider } from 'react-redux';
 import createStore from './store';
 import { StyleSheet, View, StatusBar } from 'react-native';
-import { COLOR, ThemeProvider } from 'react-native-material-ui';
+import { ThemeProvider } from 'react-native-material-ui';
 
 const store = createStore();
 
 const uiTheme = {
   palette: {
-    primaryColor: COLOR.green500,
+    primaryColor: '#004a80',
   },
 };
 

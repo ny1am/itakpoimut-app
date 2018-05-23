@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import { Button } from 'react-native-material-ui';
 import { TextField } from 'react-native-material-textfield';
 
@@ -29,28 +29,38 @@ export default class LoginPage extends React.Component {
     const { username, password } = this.state;
     return (
       <View style={styles.container}>
-        <Text>Login Page</Text>
-        <View style={styles.inputWrapper}>
-          <TextField
-            label="Email"
-            onChangeText={this.onUsernameChange}
-            value={username}
-            editable={true}
-            maxLength={40}
+        <View style={styles.logoWrapper}>
+          <Image
+            style={styles.logo}
+            source={require('./logo.png')}
+            resizeMode="contain"
           />
         </View>
-        <View style={styles.inputWrapper}>
-          <TextField
-            label="Password"
-            onChangeText={this.onPasswordChange}
-            value={password}
-            editable={true}
-            maxLength={40}
-            secureTextEntry={true}
-          />
-        </View>
-        <View style={styles.buttonWrapper}>
-          <Button primary raised text="Log in" onPress={this.onSubmit} />
+        <View style={styles.form}>
+          <View style={styles.inputWrapper}>
+            <TextField
+              label="Email"
+              onChangeText={this.onUsernameChange}
+              value={username}
+              editable={true}
+              maxLength={40}
+              tintColor="#004a80"
+            />
+          </View>
+          <View style={styles.inputWrapper}>
+            <TextField
+              label="Password"
+              onChangeText={this.onPasswordChange}
+              value={password}
+              editable={true}
+              maxLength={40}
+              secureTextEntry={true}
+              tintColor="#004a80"
+            />
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Button primary raised text="Log in" onPress={this.onSubmit} />
+          </View>
         </View>
       </View>
     );
