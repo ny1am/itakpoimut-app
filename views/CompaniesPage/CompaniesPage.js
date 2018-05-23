@@ -9,13 +9,18 @@ export default class CompaniesPage extends React.Component {
   };
 
   render() {
-    const { companies } = this.props;
+    const { companies, navigation } = this.props;
     return (
       <View style={styles.container}>
         {companies &&
           companies.length > 0 &&
           companies.map((company) => (
-            <Text key={company._id}>{company._id}</Text>
+            <Text
+              key={company._id}
+              onPress={() => navigation.navigate('company', { company })}
+            >
+              {company._id}
+            </Text>
           ))}
       </View>
     );

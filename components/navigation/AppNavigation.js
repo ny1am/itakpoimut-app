@@ -6,6 +6,7 @@ import Drawer from '../Drawer';
 
 import LandingPage from '../../views/LandingPage';
 import CompaniesPage from '../../views/CompaniesPage';
+import CompanyPage from '../../views/CompanyPage';
 
 // https://github.com/react-community/react-navigation/issues/1254
 const noTransitionConfig = () => ({
@@ -21,6 +22,7 @@ const DrawerStack = DrawerNavigator(
   {
     landing: { screen: LandingPage },
     companies: { screen: CompaniesPage },
+    company: { screen: CompanyPage },
   },
   {
     gesturesEnabled: false,
