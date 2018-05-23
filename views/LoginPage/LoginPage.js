@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View, TextInput } from 'react-native';
+import { Text, View } from 'react-native';
 import { Button } from 'react-native-material-ui';
+import { TextField } from 'react-native-material-textfield';
 
 import styles from './styles';
 
@@ -30,8 +31,8 @@ export default class LoginPage extends React.Component {
       <View style={styles.container}>
         <Text>Login Page</Text>
         <View style={styles.inputWrapper}>
-          <TextInput
-            style={styles.input}
+          <TextField
+            label="Email"
             onChangeText={this.onUsernameChange}
             value={username}
             editable={true}
@@ -39,8 +40,8 @@ export default class LoginPage extends React.Component {
           />
         </View>
         <View style={styles.inputWrapper}>
-          <TextInput
-            style={styles.input}
+          <TextField
+            label="Password"
             onChangeText={this.onPasswordChange}
             value={password}
             editable={true}

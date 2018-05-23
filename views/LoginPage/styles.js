@@ -11,14 +11,9 @@ const styles = StyleSheet.create({
     margin: 15,
     height: 40,
   },
-  input: {
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    flex: 1,
-  },
   buttonWrapper: {
-    margin: 15,
+    marginTop: 40,
+    alignItems: 'center',
   },
 });
 
