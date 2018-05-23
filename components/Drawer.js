@@ -37,13 +37,13 @@ class DrawerSpec extends Component {
               items={[
                 {
                   icon: 'bookmark-border',
-                  value: 'screen 1',
-                  onPress: () => navigation.navigate('screen1'),
+                  value: 'landing',
+                  onPress: () => navigation.navigate('landing'),
                 },
                 {
                   icon: 'today',
-                  value: 'screen 2',
-                  onPress: () => navigation.navigate('screen2'),
+                  value: 'companies',
+                  onPress: () => navigation.navigate('companies'),
                 },
               ]}
             />

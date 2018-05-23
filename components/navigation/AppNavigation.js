@@ -2,9 +2,10 @@ import React from 'react';
 import { Text, Animated, Easing } from 'react-native';
 import { StackNavigator, DrawerNavigator } from 'react-navigation';
 import { Icon } from 'react-native-material-ui';
-import Screen1 from '../Screen1';
-import Screen2 from '../Screen2';
 import Drawer from '../Drawer';
+
+import LandingPage from '../../views/LandingPage';
+import CompaniesPage from '../../views/CompaniesPage';
 
 // https://github.com/react-community/react-navigation/issues/1254
 const noTransitionConfig = () => ({
@@ -18,8 +19,8 @@ const noTransitionConfig = () => ({
 // drawer stack
 const DrawerStack = DrawerNavigator(
   {
-    screen1: { screen: Screen1 },
-    screen2: { screen: Screen2 },
+    landing: { screen: LandingPage },
+    companies: { screen: CompaniesPage },
   },
   {
     gesturesEnabled: false,

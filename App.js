@@ -12,7 +12,6 @@ const store = createStore();
 const uiTheme = {
   palette: {
     primaryColor: COLOR.green500,
-    accentColor: COLOR.pink500,
   },
 };
 

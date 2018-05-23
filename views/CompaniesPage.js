@@ -1,22 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class Screen2 extends React.Component {
+export default class CompaniesPage extends React.Component {
   static navigationOptions = {
-    title: 'Screen Two',
+    title: 'Compoanies',
   };
 
   render() {
-    const { navigation } = this.props;
     return (
       <View style={styles.container}>
-        <Text>Screen2</Text>
-        <Text
-          style={styles.linky}
-          onPress={() => navigation.navigate('screen1')}
-        >
-          Go to Screen One
-        </Text>
+        <Text>Companies</Text>
       </View>
     );
   }
@@ -25,7 +18,7 @@ export default class Screen2 extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'yellow',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
