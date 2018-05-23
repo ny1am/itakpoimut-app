@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
+    paddingBottom: 30,
   },
   banner: {
     position: 'relative',
