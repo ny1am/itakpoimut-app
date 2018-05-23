@@ -4,10 +4,6 @@ import { Text, View } from 'react-native';
 import styles from './styles';
 
 export default class CompanyPage extends React.Component {
-  static navigationOptions = {
-    title: 'Company Info',
-  };
-
   render() {
     const { company } = this.props;
     return (

@@ -6,6 +6,9 @@ import CompaniesPageComponent from './CompaniesPage';
 import { search } from '../../actions/companies';
 
 class CompaniesPageContainer extends React.Component {
+  static navigationOptions = {
+    title: 'Companies',
+  };
   componentDidMount() {
     this.props.onInit();
   }
