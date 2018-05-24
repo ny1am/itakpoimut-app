@@ -5,7 +5,7 @@ import styles from './styles';
 
 export default class LandingPage extends React.Component {
   static navigationOptions = {
-    title: 'Landing Page',
+    title: 'Home',
   };
 
   render() {

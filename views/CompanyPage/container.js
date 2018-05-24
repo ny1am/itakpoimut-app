@@ -5,7 +5,7 @@ import CompanyPageComponent from './CompanyPage';
 
 class CompanyPageContainer extends React.Component {
   static navigationOptions = {
-    title: 'Company Info',
+    title: 'Info',
   };
   render() {
     const company = this.props.navigation.state.params.company;
