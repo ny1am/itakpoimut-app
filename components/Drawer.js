@@ -35,14 +35,14 @@ class DrawerSpec extends Component {
                 <Drawer.Header.Account
                   style={{
                     container: {
-                      backgroundColor: 'rgba(0, 74, 128, 0.22)',
+                      backgroundColor: 'rgba(0, 74, 128, 0.35)',
                     },
                   }}
                   avatar={
                     <Avatar
                       image={
                         <Image
-                          style={{ width: 50, height: 50, borderRadius: 25 }}
+                          style={{ width: 60, height: 60, borderRadius: 30 }}
                           source={{ uri: loggedUser.picture_url }}
                         />
                       }
@@ -62,33 +62,36 @@ class DrawerSpec extends Component {
               divider
               items={[
                 {
-                  icon: 'bookmark-border',
-                  value: 'landing',
+                  icon: 'home',
+                  value: 'Home',
                   onPress: () => navigation.navigate('landing'),
                 },
                 {
-                  icon: 'today',
-                  value: 'companies',
+                  icon: 'list',
+                  value: 'Companies',
                   onPress: () => navigation.navigate('companies'),
                 },
-                ...(!loggedUser
-                  ? [
-                      {
-                        icon: 'menu',
-                        value: 'login',
-                        onPress: () => navigation.navigate('login'),
-                      },
-                    ]
-                  : []),
               ]}
             />
-            {loggedUser && (
+            {!loggedUser && (
               <Drawer.Section
-                divider
+                title="Account"
                 items={[
                   {
-                    icon: 'bookmark-border',
-                    value: 'logout',
+                    icon: 'person',
+                    value: 'Sign in',
+                    onPress: () => navigation.navigate('login'),
+                  },
+                ]}
+              />
+            )}
+            {loggedUser && (
+              <Drawer.Section
+                title="Account"
+                items={[
+                  {
+                    icon: 'exit-to-app',
+                    value: 'Logout',
                     onPress: () => dispatch({ type: 'LOGOUT' }),
                   },
                 ]}
