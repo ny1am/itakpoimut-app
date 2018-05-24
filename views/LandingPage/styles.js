@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingBottom: 30,
   },
   banner: {
     position: 'relative',
@@ -33,6 +32,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 16,
     marginRight: 16,
+  },
+  last: {
+    marginBottom: 30,
   },
   sectionTitle: {
     fontSize: 20,

@@ -43,7 +43,7 @@ export default class LandingPage extends React.Component {
             запропонованих нашим розумним пошуком варіантів.
           </Text>
         </View>
-        <View style={styles.section}>
+        <View style={[styles.section, styles.last]}>
           <Text style={styles.sectionTitle}>
             Шукайте компанії за сферою діяльності
           </Text>

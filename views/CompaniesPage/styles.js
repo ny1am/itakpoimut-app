@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgba(0, 74, 128, 0.20)',
+    backgroundColor: 'white',
   },
   item: {
     margin: 20,
@@ -12,6 +12,12 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     flexDirection: 'row',
     position: 'relative',
+    shadowOffset: { width: 1, height: 1 },
+    shadowColor: 'black',
+    shadowOpacity: 0.1,
+  },
+  last: {
+    marginBottom: 30,
   },
   info: {
     flex: 100,

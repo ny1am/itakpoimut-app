@@ -11,8 +11,14 @@ export default class CompaniesPage extends React.Component {
       <ScrollView style={styles.container}>
         {companies &&
           companies.length > 0 &&
-          companies.map((company) => (
-            <View key={company._id} style={styles.item}>
+          companies.map((company, index) => (
+            <View
+              key={company._id}
+              style={[
+                styles.item,
+                index === companies.length - 1 && styles.last,
+              ]}
+            >
               <Avatar
                 image={
                   <Image
