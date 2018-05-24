@@ -35,6 +35,7 @@ class DrawerSpec extends Component {
                 <Drawer.Header.Account
                   style={{
                     container: {
+                      paddingTop: 20,
                       backgroundColor: 'rgba(0, 74, 128, 0.35)',
                     },
                   }}

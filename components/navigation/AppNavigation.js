@@ -49,6 +49,17 @@ const drawerButton = (navigation) => (
   </Text>
 );
 
+const backButton = (navigation) => (
+  <Text
+    style={{ padding: 5, color: 'white' }}
+    onPress={() => {
+      navigation.navigate('companies');
+    }}
+  >
+    <Icon name="arrow-back" style={{ color: 'white' }} />
+  </Text>
+);
+
 const DrawerNavigation = StackNavigator(
   {
     DrawerStack: { screen: DrawerStack },
@@ -60,7 +71,9 @@ const DrawerNavigation = StackNavigator(
       title: navigationOptions.title || 'Menu',
       headerTintColor: 'white',
       gesturesEnabled: false,
-      headerLeft: drawerButton(navigation),
+      headerLeft: navigationOptions.back
+        ? backButton(navigation)
+        : drawerButton(navigation),
     }),
   }
 );
